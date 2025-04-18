@@ -132,139 +132,49 @@ TB1:
 
 [3.4. Product Backlog](#34-product-backlog)
 
-### [CAPÍTULO IV: SOLUTION SOFTWARE DESIGN](#capítulo-iv-solution-software-design)
+### [CAPÍTULO IV: Strategic Level Software Design](#capítulo-iv-strategic-level-software-design)
 
-[4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)  
+[4.1. Strategic Level Attribute Driven Design](#41-strategic-level-attribute-driven-design)
 
-[4.1.1. EventStorming](#411-eventstorming)  
+[4.1.1. Design Purpose](#411-design-purpose)
 
-[4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)  
+[4.1.2. Attribute Driven Design Inputs](#412-attribute-driven-design-inputs)
 
-[4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)  
+[4.1.2.1. Primary Functionality (Primary User Stories)](#412-attribute-driven-design-inputs)
 
-[4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)  
+[4.1.2.2. Quality attribute Scenarios](#4122-quality-attribute-scenarios)
 
-[4.1.2. Context Mapping](#412-context-mapping)  
+[4.1.2.3. Constraints](#4123-constraints)
 
-[4.1.3. Software Architecture](#413-software-architecture)  
+[4.1.3. Architectural Drivers Backlog](#413-architectural-drivers-backlog)
 
-[4.1.3.1. Software Architecture System Landscape Diagrams](#4131-software-architecture-system-landscape-diagrams)  
+[4.1.4. Architectural Design Decisions](#414-architectural-design-decisions)
 
-[4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)  
+[4.1.5. Quality Attribute Scenario Refinements](#415-quality-attribute-scenario-refinements)
 
-[4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)  
+[4.2. Strategic-Level Domain-Driven Design](#42-strategic-level-domain-driven-design)  
 
-[4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)  
+[4.2.1. EventStorming](#421-eventstorming)  
 
-[4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)  
+[4.2.2. Candidate Context Discovery](#422-candidate-context-discovery)  
 
-[4.2.1. Bounded Context: IAM](#421-bounded-context-iam)  
+[4.2.3. Domain Message Flows Modeling](#423-domain-message-flows-modeling)  
 
-[4.2.1.1. Domain Layer](#4211-domain-layer)  
+[4.2.4. Bounded Context Canvases](#424-bounded-context-canvases)  
 
-[4.2.1.2. Interface Layer](#4212-interface-layer)  
+[4.2.5. Context Mapping](#425-context-mapping)  
 
-[4.2.1.3. Application Layer](#4213-application-layer)  
+[4.3. Software Architecture](#43-software-architecture)  
 
-[4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)  
+[4.3.1. Software Architecture System Landscape Diagrams](#431-software-architecture-system-landscape-diagrams)  
 
-[4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-component-level-diagrams)  
+[4.3.2. Software Architecture Context Level Diagrams](#432-software-architecture-context-level-diagrams)  
 
-[4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-code-level-diagrams)  
+[4.3.3. Software Architecture Container Level Diagrams](#433-software-architecture-container-level-diagrams)  
 
-[4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-domain-layer-class-diagrams)  
+[4.3.4. Software Architecture Deployment Diagrams](#434-software-architecture-deployment-diagrams)  
 
-[4.2.1.6.2. Bounded Context Database Design Diagram](#42162-database-design-diagram)  
 
-[4.2.2. Bounded Context: Profile](#422-bounded-context-profile)  
-
-[4.2.2.1. Domain Layer](#4221-domain-layer)  
-
-[4.2.2.2. Interface Layer](#4222-interface-layer)  
-
-[4.2.2.3. Application Layer](#4223-application-layer)  
-
-[4.2.2.4. Infrastructure Layer](#4224-infrastructure-layer)  
-
-[4.2.2.5. Bounded Context Software Architecture Component Level Diagrams](#4225-component-level-diagrams)  
-
-[4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#4226-code-level-diagrams)  
-
-[4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42261-domain-layer-class-diagrams)  
-
-[4.2.2.6.2. Bounded Context Database Design Diagram](#42262-database-design-diagram)  
-
-[4.2.3. Bounded Context: MedicalRecord](#423-bounded-context-medicalrecord)  
-
-[4.2.3.1. Domain Layer](#4231-domain-layer)  
-
-[4.2.3.2. Interface Layer](#4232-interface-layer)  
-
-[4.2.3.3. Application Layer](#4233-application-layer)  
-
-[4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)  
-
-[4.2.3.5. Bounded Context Software Architecture Component Level Diagrams](#4235-component-level-diagrams)  
-
-[4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4236-code-level-diagrams)  
-
-[4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-domain-layer-class-diagrams)  
-
-[4.2.3.6.2. Bounded Context Database Design Diagram](#42362-database-design-diagram)  
-
-[4.2.4. Bounded Context: Payments](#424-bounded-context-payments)  
-
-[4.2.4.1. Domain Layer](#4241-domain-layer)  
-
-[4.2.4.2. Interface Layer](#4242-interface-layer)  
-
-[4.2.4.3. Application Layer](#4243-application-layer)  
-
-[4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)  
-
-[4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#4245-component-level-diagrams)  
-
-[4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-code-level-diagrams)  
-
-[4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-domain-layer-class-diagrams)  
-
-[4.2.4.6.2. Bounded Context Database Design Diagram](#42462-database-design-diagram)  
-
-[4.2.5. Bounded Context: Notification](#425-bounded-context-notification)  
-
-[4.2.5.1. Domain Layer](#4251-domain-layer)  
-
-[4.2.5.2. Interface Layer](#4252-interface-layer)  
-
-[4.2.5.3. Application Layer](#4253-application-layer)  
-
-[4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer)  
-
-[4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-component-level-diagrams)  
-
-[4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-code-level-diagrams)  
-
-[4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-domain-layer-class-diagrams)  
-
-[4.2.5.6.2. Bounded Context Database Design Diagram](#42562-database-design-diagram)  
-
-[4.2.6. Bounded Context: Communication](#426-bounded-context-communication)  
-
-[4.2.6.1. Domain Layer](#4261-domain-layer)  
-
-[4.2.6.2. Interface Layer](#4262-interface-layer)  
-
-[4.2.6.3. Application Layer](#4263-application-layer)  
-
-[4.2.6.4. Infrastructure Layer](#4264-infrastructure-layer)  
-
-[4.2.6.5. Bounded Context Software Architecture Component Level Diagrams](#4265-component-level-diagrams)  
-
-[4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#4266-code-level-diagrams)  
-
-[4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-domain-layer-class-diagrams)  
-
-[4.2.6.6.2. Bounded Context Database Design Diagram](#42662-database-design-diagram)  
 
 
 
@@ -273,10 +183,6 @@ TB1:
 ## [Conclusiones](#conclusiones)
 
 [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-
-[Video App Validation](#video-app-validation)
-
-[Video About the product](#video-about-the-product)
 
 [Video About the team](#video-about-the-team)
 
@@ -1176,13 +1082,13 @@ Para elaborar nuestro **product backlog**, utilizamos la escala Fibonacci (1, 2,
 <img src="images/cap3/product-backlog-new.png" >
 https://trello.com/invite/b/66EkeO8t/ATTI7681f5c932b9217761b0224c0051dd4cC0E965E5/product-backlog-hormonalcare
 
-## CAPÍTULO IV: SOLUTION SOFTWARE DESIGN
+## CAPÍTULO IV: Strategic Level Software Design
 
-### 4.1. Strategic-Level Attribute-Driven Design
+### 4.1. Strategic Level Attribute Driven Design
 
 #### 4.1.1. Design Purpose
 
-#### 4.1.2. Attribute-Driven Design Inputs
+#### 4.1.2. Attribute Driven Design Inputs
 
 ##### 4.1.2.1. Primary Functionality (Primary User Stories) 
 
